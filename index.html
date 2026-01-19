@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Meal | منصة الوجبات الذكية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== شريط علوي ===== -->
+<header class="navbar">
+  <div class="logo">
+    <img src="https://i.ibb.co/gbNrm0sM/837abbaf-efb7-41d0-b6f4-50a9bc78de99.jpg">
+    <span>Smart Meal</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home">الرئيسية</a></li>
+    <li><a href="#menu">قائمة الطعام</a></li>
+    <li><a href="#health">توصيات صحية</a></li>
+    <li><a href="#payment">الدفع</a></li>
+    <li><a href="#contact">تواصل</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+    <a href="https://wa.me/213671070943" target="_blank">💬</a>
+    <a href="tel:+213671070943">📞</a>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero">
+  <h1>Smart Meal</h1>
+  <p>اختيارات صحية • توصيات ذكية • توصيل سريع</p>
+  <a href="#menu" class="main-btn">ابدأ الطلب</a>
+</section>
+
+<!-- ===== قائمة الطعام ===== -->
+<section id="menu" class="section">
+<h2>🍽️ قائمة الطعام</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://i.ibb.co/yF0fngXw/IMG-1631.jpg" alt="دجاج مشوي">
+<h3>دجاج مشوي</h3>
+<p>450 دج</p>
+<button onclick="addToCart('دجاج مشوي',450)">أضف للسلة</button>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/27sqWTFn/IMG-1630.jpg" alt="وجبة أرز">
+<h3>وجبة أرز</h3>
+<p>450 دج</p>
+<button onclick="addToCart('وجبة أرز',450)">أضف للسلة</button>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/xScPBgxw/IMG-1629.jpg" alt="باستا بالدجاج">
+<h3>باستا بالدجاج</h3>
+<p>450 دج</p>
+<button onclick="addToCart('باستا بالدجاج',450)">أضف للسلة</button>
+</div>
+
+</div>
+</section>
+
+<!-- ===== توصيات صحية ذكية ===== -->
+<section id="health" class="section light">
+<h2>🤖 توصيات صحية ذكية</h2>
+
+<div class="health-grid">
+  <div class="health-card">🥗 وجبات منخفضة السعرات</div>
+  <div class="health-card">💧 شرب كميات كافية من الماء</div>
+  <div class="health-card">🥩 بروتين متوازن</div>
+  <div class="health-card">🏃 ممارسة الرياضة</div>
+</div>
+</section>
+
+<!-- ===== الدفع ===== -->
+<section id="payment" class="section">
+<h2>💳 الدفع الإلكتروني</h2>
+<p>الدفع عبر البطاقة الذهبية</p>
+<button class="pay-btn" onclick="confirmOrder()">ادفع الآن</button>
+</section>
+
+<!-- ===== تواصل ===== -->
+<section id="contact" class="section light">
+<h2>📍 تواصل معنا – سكيكدة</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Skikda,Algeria&output=embed"
+width="100%" height="300" style="border:0;border-radius:15px;">
+</iframe>
+</section>
+
+<footer>
+© 2026 Smart Meal – جميع الحقوق محفوظة
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
